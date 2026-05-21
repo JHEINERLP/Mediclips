@@ -1,0 +1,155 @@
+/* FONDO GENERAL */
+.auth-body {
+    margin: 0;
+    height: 100vh;
+
+    /* Imagen de fondo */
+    background-image: url('../assets/loginq.jpg'); /* 👈 reemplaza con tu imagen */
+    background-size: cover;      /* hace que la imagen cubra todo el contenedor */
+    background-position: center; /* centra la imagen */
+    background-repeat: no-repeat;/* evita que se repita */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CONTENEDOR */
+.auth-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* TARJETA PRINCIPAL */
+.auth-card.split {
+    display: flex;
+    width: 850px;
+    border-radius: 16px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+/* IZQUIERDA (BLANCA) */
+.auth-left {
+    flex: 1;
+    background: white;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+}
+
+/* LOGO */
+.logo {
+    width: 110px;
+    margin-bottom: 15px;
+}
+
+/* TEXTO IZQUIERDA */
+.brand h1 {
+    font-size: 38px;
+    margin-bottom: 5px;
+}
+
+.slogan {
+    font-size: 14px;
+    color: #666;
+}
+
+/* DERECHA (AZUL) */
+/* CENTRAR TODO EL CONTENIDO DERECHO */
+.auth-right {
+    flex: 1;
+    padding: 60px; /* 👈 más espacio */
+    background: linear-gradient(135deg, #2b6df6, #4c84ff);
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    gap: 10px; /* 👈 separa elementos automáticamente */
+}
+
+/* TÍTULO */
+.auth-right h2 {
+    font-size: 28px; /* 👈 más grande */
+    margin-bottom: 5px;
+}
+
+/* SUBTÍTULO */
+.auth-subtitle {
+    margin-bottom: 25px;
+    color: rgba(255,255,255,0.8);
+}
+
+/* FORMULARIO */
+.auth-right form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px; /* 👈 más ancho (antes 300) */
+}
+
+/* LABELS */
+.auth-right label {
+    margin-bottom: 5px;
+    font-size: 14px;
+    text-align: left; /* 👈 mejor lectura */
+}
+
+/* INPUTS */
+.auth-right input {
+    width: 100%;
+    padding: 14px; /* 👈 más cómodos */
+    margin-bottom: 18px;
+    border-radius: 8px;
+    border: none;
+    background: rgba(255,255,255,0.2);
+    color: white;
+}
+
+/* PLACEHOLDER */
+.auth-right input::placeholder {
+    color: rgba(255,255,255,0.7);
+}
+
+/* FOCUS */
+.auth-right input:focus {
+    outline: none;
+    background: rgba(255,255,255,0.3);
+}
+
+/* BOTÓN */
+.primary {
+    background: white;
+    color: #2b6df6;
+    border: none;
+    padding: 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.primary:hover {
+    background: #eaeaea;
+}
+
+/* FOOTER */
+.auth-footer {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+/* LINK */
+.auth-footer a {
+    color: white;
+    text-decoration: underline;
+}

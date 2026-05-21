@@ -1,0 +1,416 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f2f9fa;
+}
+
+/* NAVBAR */
+.navbar {
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: white;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.navbar a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #999797;
+}
+
+.nav-buttons button {
+    background: #2b6df6;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 6px;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* espacio entre logo y texto */
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.logo img {
+    height: 40px; /* ajusta el tamaño del logo */
+    width: auto;
+}
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero h1 {
+    font-size: 40px;
+}
+
+.hero p {
+    color: gray;
+}
+
+.hero-buttons {
+    margin: 20px;
+}
+
+.primary {
+    background: #2b6df6;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+}
+
+.secondary {
+    border: 1px solid #2b6df6;
+    padding: 12px 20px;
+    border-radius: 6px;
+    background: transparent;
+}
+
+.hero-image img {
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+/* SERVICES */
+.services {
+    text-align: center;
+    padding: 50px;
+}
+.subtitle {
+    color: var(--text-light);
+    margin-bottom: 40px;
+}
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    position: relative;
+    background: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 10px;
+}
+.card h3 {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.card p {
+    color: var(--text-light);
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.card-icon {
+    position: absolute;
+    top: 10px;   
+    left: 10px; 
+    width: 30px;
+    height: 30px;
+}
+
+/* SECURITY */
+.security {
+    background: #e9f2ff;
+    padding: 70px 40px;
+}
+.security-container {
+    display: flex;
+    align-items: center; /* 👈 centra verticalmente */
+    justify-content: space-between;
+    gap: 60px; /* más aire entre texto e imagen */
+    max-width: 1100px;
+    margin: auto;
+}
+.security-text {
+    flex: 1;
+}
+.seguriti-text h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+.seguriti-text p {
+    color: var(--text-light);
+    margin-bottom: 20px;
+
+}
+.seguriti-text ul {
+    list-style: none;
+    padding: 0;
+}
+.seguriti-text li{
+    margin-bottom: 10px;
+    color: var(--text-light);
+}
+
+.security-image {
+    flex: 1;
+    display: flex;
+    justify-content: center; /* 👈 centra la imagen dentro de su espacio */
+}
+
+.security-image img {
+    width: 400px; /* 👈 más grande */
+    max-width: 100%;
+    border-radius: 12px;
+}
+
+/* BENEFITS */
+/* SECCIÓN */
+.benefits {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+/* TÍTULO */
+.benefits h2 {
+    font-size: 28px;
+    margin-bottom: 60px; /* 👈 separación con tarjetas */
+}
+
+/* GRID */
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* TARJETAS */
+.benefit-card {
+    background: #f2f9fa;
+    padding: 30px 20px;
+    border-radius: 12px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+/* HOVER (efecto bonito) */
+.benefit-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* ICONO */
+.icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+}
+
+/* TÍTULO TARJETA */
+.benefit-card h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+/* TEXTO */
+.benefit-card p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .benefits-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .benefits-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* PLANS */
+/* Fondo de la sección y espaciado */
+.plans {
+    background-color: #e9f2ff;
+    padding: 80px 20px; /* espacio arriba y abajo */
+    text-align: center; /* centra título y subtítulo */
+}
+
+/* Título de la sección */
+.plans h2 {
+    margin-bottom: 15px;
+    font-size: 28px; /* tamaño legible */
+    font-weight: 700;
+    color: #000; /* color oscuro para contraste */
+}
+
+/* Subtítulo */
+.plans .subtitle {
+    margin-bottom: 50px;
+    font-size: 16px;
+    color: #555; /* un gris suave */
+}
+
+/* Contenedor de tarjetas */
+.plan-cards {
+    display: flex;
+    justify-content: center; /* centra todas las tarjetas */
+    gap: 20px;
+    flex-wrap: nowrap; /* todas en una fila */
+    align-items: flex-start; /* alineadas por arriba */
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Tarjetas individuales */
+.plan {
+    flex: 1 1 250px; /* se ajustan si hace falta */
+    max-width: 280px; 
+    background-color: #fff;
+    border: 2px solid transparent;
+    border-radius: 12px;
+    padding: 25px 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+/* Hover de todas las tarjetas */
+.plan:hover {
+    border-color: #1e90ff;
+    box-shadow: 0 0 20px rgba(30,144,255,0.5);
+    transform: translateY(-5px);
+}
+
+/* Tarjeta activa (del medio) */
+.plan.active {
+    border-color: #1e90ff;
+    box-shadow: 0 0 25px rgba(30,144,255,0.5);
+}
+
+/* Precio */
+.plan .price {
+    font-size: 1.3em;
+    margin-bottom: 20px;
+}
+
+/* Lista de características */
+.plan ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.plan ul li {
+    margin-bottom: 8px;
+}
+
+/* Botones */
+.plan button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button.primary {
+    background-color: #1e90ff;
+    color: white;
+}
+
+button.secondary {
+    background-color: transparent;
+    color: #1e90ff;
+    border: 2px solid #1e90ff;
+}
+
+/* Responsive para móviles */
+@media (max-width: 900px) {
+    .plan-cards {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .plan {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+
+/* FOOTER */
+
+.footer {
+    background: #ffffff;
+    padding: 60px 40px 20px;
+}
+
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 1100px;
+    margin: auto;
+    flex-wrap: wrap; /* para que en móvil las columnas se apilen */
+}
+
+
+.footer-brand {
+    display: flex;
+    flex-direction: column; /* apila verticalmente */
+    gap: 10px; /* espacio entre logo-nombre y texto */
+    max-width: 300px;
+}
+
+.logo-name {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.footer-logo {
+    width: 60px;
+    height: auto;
+}
+
+/* Texto descriptivo debajo */
+.footer-desc {
+    margin: 0; /* sin margen que rompa */
+    color: var(--text-light);
+    font-size: 14px;
+    line-height: 1.5;
+}
+.footer-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-links h4 {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: var(--text-light);
+    margin-bottom: 8px;
+}
+
+.footer-links a:hover {
+    color: var(--primary);
+}
+
+/* Copyright */
+.copy {
+    text-align: center;
+    margin-top: 40px;
+    color: var(--text-light);
+}
