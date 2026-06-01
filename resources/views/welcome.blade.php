@@ -22,6 +22,7 @@
     </nav>
     <div class="nav-buttons">
         <a href="{{ route('login') }}">Iniciar sesión</a>
+        <a href="{{ route('registro.paciente') }}">Soy paciente</a>
         <a href="{{ route('registro.empresa') }}" class="btn-start">Comenzar gratis</a>
     </div>
 </header>
@@ -33,7 +34,7 @@
     
     <div class="hero-buttons">
         <a href="{{ route('registro.empresa') }}" class="btn-hero-primary">Comenzar gratis</a>
-        <button class="secondary">Agendar demostración</button>
+        <a href="{{ route('registro.paciente') }}" class="secondary" style="text-decoration:none;display:inline-block;">Registrarme como paciente</a>
     </div>
 
     <div class="hero-image">

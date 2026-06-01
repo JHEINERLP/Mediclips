@@ -38,14 +38,9 @@
                 <label for="nombre_empresa">Nombre de la empresa</label>
                 <input type="text" id="nombre_empresa" name="nombre_empresa" value="{{ old('nombre_empresa') }}" placeholder="Ej: Clínica SaludPlus" required>
 
-                <label for="nit">NIT o identificación</label>
-                <input type="text" id="nit" name="nit" value="{{ old('nit') }}" placeholder="Ej: 900123456" required>
-
-                <label for="direccion">Dirección</label>
-                <input type="text" id="direccion" name="direccion" value="{{ old('direccion') }}" placeholder="Ej: Calle 10 #20-30" required>
-
-                <label for="telefono">Teléfono</label>
-                <input type="text" id="telefono" name="telefono" value="{{ old('telefono') }}" placeholder="Ej: 3001234567" required>
+                <label for="subdominio">Subdominio (único)</label>
+                <input type="text" id="subdominio" name="subdominio" value="{{ old('subdominio') }}" placeholder="Ej: saludplus" pattern="[a-zA-Z0-9\-]+" required>
+                <small style="color:#666;font-size:0.85em;">Solo letras, números y guiones. Ej: saludplus.medicclips.com</small>
 
                 <label for="email">Correo empresarial (Usuario Administrador)</label>
                 <input type="email" id="email" name="email" value="{{ old('email') }}" placeholder="empresa@email.com" required>

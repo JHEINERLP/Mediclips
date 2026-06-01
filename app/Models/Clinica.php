@@ -31,4 +31,24 @@ class Clinica extends Model
     {
         return $this->hasMany(Medico::class, 'clinica_id');
     }
+
+    public function pacientes()
+    {
+        return $this->hasMany(Paciente::class, 'clinica_id');
+    }
+
+    public function citas()
+    {
+        return $this->hasMany(Cita::class, 'clinica_id');
+    }
+
+    public function medicamentos()
+    {
+        return $this->hasMany(Medicamento::class, 'clinica_id');
+    }
+
+    public function transaccionesPago()
+    {
+        return $this->hasMany(TransaccionPago::class, 'clinica_id');
+    }
 }

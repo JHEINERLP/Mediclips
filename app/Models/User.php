@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\HasOne;
 
 class User extends Authenticatable
@@ -59,5 +60,35 @@ class User extends Authenticatable
     public function medico(): HasOne
     {
         return $this->hasOne(Medico::class, 'user_id');
+    }
+
+    public function paciente(): HasOne
+    {
+        return $this->hasOne(Paciente::class, 'usuario_id');
+    }
+
+    public function entregasComoFarmaceutico(): HasMany
+    {
+        return $this->hasMany(EntregaMedicamento::class, 'farmaceutico_id');
+    }
+
+    public function isAdmin(): bool
+    {
+        return $this->rol === 'admin';
+    }
+
+    public function isMedico(): bool
+    {
+        return $this->rol === 'medico';
+    }
+
+    public function isPaciente(): bool
+    {
+        return $this->rol === 'paciente';
+    }
+
+    public function isFarmaceutico(): bool
+    {
+        return $this->rol === 'farmaceutico';
     }
 }

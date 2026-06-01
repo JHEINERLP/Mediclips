@@ -49,8 +49,10 @@
             </form>
 
             <p class="auth-footer">
-                ¿No tienes cuenta? 
-                <a href="{{ route('registro.empresa') }}">Crear cuenta</a>
+                ¿No tienes cuenta?<br>
+                <a href="{{ route('registro.paciente') }}">Registrarme como paciente</a>
+                &nbsp;·&nbsp;
+                <a href="{{ route('registro.empresa') }}">Registrar mi clínica</a>
             </p>
         </div>
 
