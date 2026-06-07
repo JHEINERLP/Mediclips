@@ -38,7 +38,7 @@
     </div>
 
     <div class="hero-image">
-        <img src="https://via.placeholder.com/800x400" alt="dashboard">
+        <img src="{{ asset('assets/ImagenEjejmplo.JPG') }}" alt="dashboard">
     </div>
 </section>
 
