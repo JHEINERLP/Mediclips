@@ -1,59 +1,338 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
-
 <p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+  <img src="public/assets/logo.png" alt="MedicClips Logo" width="120">
 </p>
 
-## About Laravel
+<h1 align="center">🏥 MedicClips</h1>
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+<p align="center">
+  <strong>Plataforma SaaS Multi-Tenant para gestión inteligente de clínicas médicas</strong>
+</p>
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+<p align="center">
+  <img src="https://img.shields.io/badge/Laravel-12.x-FF2D20?style=for-the-badge&logo=laravel&logoColor=white" alt="Laravel">
+  <img src="https://img.shields.io/badge/PHP-8.2+-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="PHP">
+  <img src="https://img.shields.io/badge/PostgreSQL-14+-336791?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL">
+  <img src="https://img.shields.io/badge/Vite-5.x-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite">
+  <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="License">
+</p>
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+<p align="center">
+  <a href="#-demo">🎯 Demo</a> •
+  <a href="#-características">✨ Características</a> •
+  <a href="#-instalación">🚀 Instalación</a> •
+  <a href="#-credenciales">🔐 Credenciales</a> •
+  <a href="#-estructura">📁 Estructura</a> •
+  <a href="#-tecnologías">🛠 Tecnologías</a>
+</p>
 
-## Learning Laravel
+---
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+## 📸 Vista del Sistema
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+<p align="center">
+  <img src="public/assets/ImagenEjejmplo.JPG" alt="MedicClips Dashboard" width="100%">
+</p>
 
-## Laravel Sponsors
+---
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+## 🎯 Demo
 
-### Premium Partners
+> **URL de acceso (local):** `http://127.0.0.1:8000`
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+| Rol | Email | Contraseña |
+|---|---|---|
+| 🛡️ Administrador | `admin@demo.com` | `password` |
+| 🩺 Médico | `medico@demo.com` | `password` |
+| 🧑 Paciente | `paciente@demo.com` | `password` |
+| 💊 Farmacéutico | `farmaceutico@demo.com` | `password` |
 
-## Contributing
+---
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## ✨ Características
 
-## Code of Conduct
+MedicClips es una plataforma **multi-tenant** que permite a múltiples clínicas operar de forma aislada y segura desde una misma instalación.
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+### 🏥 Gestión de Clínicas
+- Registro y administración de múltiples clínicas (tenants)
+- Control de plan de suscripción (Básico, Pro, Empresarial)
+- Gestión de vigencia y estado de la clínica
 
-## Security Vulnerabilities
+### 🩺 Gestión de Médicos
+- Alta de médicos con especialidad, licencia y biografía
+- Configuración de horarios de atención por día
+- Asociación de médicos a su clínica correspondiente
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+### 🧑‍🤝‍🧑 Gestión de Pacientes
+- Expediente clínico completo (género, grupo sanguíneo, contacto de emergencia)
+- Historial de citas y reportes clínicos
+- Registro de recetas y medicamentos recibidos
 
-## License
+### 📅 Citas Médicas
+- Agendamiento de citas con médico y paciente
+- Estados: `pendiente`, `completada`, `cancelada`
+- Control de motivo de consulta
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+### 📋 Reportes Clínicos y Recetas
+- Creación de reportes clínicos ligados a citas completadas
+- Generación de recetas con instrucciones generales
+- Gestión de medicamentos por receta
+
+### 💊 Farmacia e Inventario
+- Control de stock de medicamentos por clínica
+- Alertas de bajo stock (< 10 unidades)
+- Registro de entregas por farmacéutico
+
+### 💳 Pagos y Suscripciones
+- Registro de transacciones de pago por clínica
+- Control de estado de pago y fecha de pago
+
+### 🔔 Notificaciones
+- Sistema de invitaciones a médicos, pacientes y farmacéuticos
+- Notificaciones automáticas de estado de citas
+
+---
+
+## 🚀 Instalación
+
+### Requisitos Previos
+
+| Herramienta | Versión mínima |
+|---|---|
+| PHP | 8.2+ |
+| Composer | 2.x |
+| PostgreSQL | 14+ |
+| Node.js | 18+ |
+| Git | Cualquiera |
+
+### Paso 1 — Clonar el repositorio
+
+```bash
+git clone https://github.com/JHEINERLP/Mediclips-.git
+cd Mediclips-
+```
+
+### Paso 2 — Instalar dependencias
+
+```bash
+# Dependencias PHP
+composer install
+
+# Dependencias Node.js
+npm install
+```
+
+### Paso 3 — Configurar el entorno
+
+```bash
+# Copiar el archivo de entorno
+cp .env.example .env   # Linux/Mac
+copy .env.example .env # Windows
+
+# Generar la clave de la aplicación
+php artisan key:generate
+```
+
+Edita el archivo `.env` con tus credenciales de PostgreSQL:
+
+```env
+DB_CONNECTION=pgsql
+DB_HOST=127.0.0.1
+DB_PORT=5432
+DB_DATABASE=Mediclips
+DB_USERNAME=postgres
+DB_PASSWORD=tu_contraseña
+```
+
+### Paso 4 — Crear la base de datos
+
+Abre **pgAdmin** o la terminal de PostgreSQL y ejecuta:
+
+```sql
+CREATE DATABASE "Mediclips";
+```
+
+### Paso 5 — Ejecutar migraciones y datos demo
+
+```bash
+# Crear tablas y cargar datos de demostración
+php artisan migrate --seed
+```
+
+Esto carga automáticamente:
+- 🏥 **5 Clínicas** con datos completos
+- 👥 **160 Usuarios** (admins, médicos, pacientes, farmacéuticos)
+- 🩺 **50 Médicos** con especialidades y horarios
+- 🧑 **100 Pacientes** con fichas clínicas
+- 📅 **200 Citas** médicas
+- 💊 **150 Medicamentos** en inventario
+- 📋 **69 Reportes** clínicos y recetas
+- 📦 **88 Entregas** de medicamentos
+
+### Paso 6 — Compilar assets y lanzar el servidor
+
+```bash
+# Compilar CSS/JS para producción
+npm run build
+
+# Iniciar el servidor de desarrollo
+php artisan serve
+```
+
+Abre tu navegador en: **http://127.0.0.1:8000** 🎉
+
+---
+
+## 🔐 Credenciales de Demo
+
+Todos los usuarios pertenecen a **Clínica Médica Demo**.
+
+| Rol | Email | Contraseña | Permisos |
+|---|---|---|---|
+| 🛡️ **Admin** | `admin@demo.com` | `password` | Acceso total al sistema |
+| 🩺 **Médico** | `medico@demo.com` | `password` | Citas, reportes, recetas |
+| 🧑 **Paciente** | `paciente@demo.com` | `password` | Mis citas |
+| 💊 **Farmacéutico** | `farmaceutico@demo.com` | `password` | Medicamentos y entregas |
+
+---
+
+## 🌐 Páginas Disponibles
+
+| Página | URL |
+|---|---|
+| 🏠 Landing Page | `http://127.0.0.1:8000` |
+| 🔐 Iniciar Sesión | `http://127.0.0.1:8000/login` |
+| 🏢 Registro de Empresa | `http://127.0.0.1:8000/registro-empresa` |
+| 🧑 Registro de Paciente | `http://127.0.0.1:8000/registro-paciente` |
+| 📊 Dashboard | `http://127.0.0.1:8000/dashboard` *(requiere login)* |
+| 📅 Citas | `http://127.0.0.1:8000/citas` |
+| 👨‍⚕️ Médicos | `http://127.0.0.1:8000/medicos` |
+| 🧑 Pacientes | `http://127.0.0.1:8000/pacientes` |
+| 💊 Medicamentos | `http://127.0.0.1:8000/medicamentos` |
+
+---
+
+## 📁 Estructura del Proyecto
+
+```
+Mediclips/
+├── app/
+│   ├── Http/
+│   │   ├── Controllers/
+│   │   │   ├── Auth/              # Login, registro empresa/paciente
+│   │   │   ├── DashboardController.php
+│   │   │   ├── CitaController.php
+│   │   │   ├── MedicoController.php
+│   │   │   ├── PacienteController.php
+│   │   │   ├── MedicamentoController.php
+│   │   │   ├── RecetaController.php
+│   │   │   ├── ReporteClinicoController.php
+│   │   │   ├── EntregaMedicamentoController.php
+│   │   │   └── FarmaceuticoController.php
+│   │   └── Middleware/
+│   │       ├── EnsureClinica.php  # Valida tenant activo
+│   │       └── RoleMiddleware.php # Control de roles
+│   └── Models/
+│       ├── Clinica.php
+│       ├── User.php
+│       ├── Medico.php
+│       ├── Paciente.php
+│       ├── Cita.php
+│       ├── Medicamento.php
+│       ├── Receta.php
+│       ├── ReporteClinico.php
+│       ├── EntregaMedicamento.php
+│       └── TransaccionPago.php
+├── database/
+│   ├── migrations/                # Estructura de la BD
+│   └── seeders/
+│       └── DatabaseSeeder.php     # Datos de demostración
+├── public/
+│   ├── assets/                    # Imágenes y recursos
+│   └── css/                       # Hojas de estilo
+├── resources/
+│   └── views/
+│       ├── welcome.blade.php      # Landing page
+│       ├── dashboard/             # Panel de control
+│       ├── citas/                 # Gestión de citas
+│       ├── medicos/               # Gestión de médicos
+│       ├── pacientes/             # Gestión de pacientes
+│       ├── medicamentos/          # Inventario
+│       └── auth/                  # Login y registro
+└── routes/
+    └── web.php                    # Rutas de la aplicación
+```
+
+---
+
+## 🛠 Tecnologías
+
+| Capa | Tecnología |
+|---|---|
+| **Backend** | Laravel 12 (PHP 8.2) |
+| **Base de Datos** | PostgreSQL 14+ |
+| **Frontend** | Blade Templates + CSS3 Vanilla |
+| **Build Tool** | Vite 5 |
+| **Autenticación** | Laravel Auth (sesiones) |
+| **Multi-tenancy** | Middleware personalizado por `clinica_id` |
+| **Faker / Seeding** | FakerPHP (locale `es_ES`) |
+| **Servidor local** | `php artisan serve` |
+
+---
+
+## 🛠️ Comandos de Desarrollo
+
+```bash
+# Iniciar servidor
+php artisan serve
+
+# Rehacer toda la BD con datos frescos
+php artisan migrate:fresh --seed
+
+# Solo recargar datos de prueba
+php artisan db:seed
+
+# Ver todas las rutas registradas
+php artisan route:list
+
+# Limpiar cachés
+php artisan optimize:clear
+
+# Consola interactiva
+php artisan tinker
+```
+
+---
+
+## 🗃️ Esquema de Base de Datos
+
+```
+clinicas ──┬── users ──┬── medicos ──── horarios
+           │           ├── pacientes
+           │           └── (farmaceutico, admin)
+           ├── medicamentos
+           ├── especialidades
+           └── citas ──── reportes_clinicos ──── recetas ──── entregas_medicamentos
+```
+
+---
+
+## 🤝 Contribuir
+
+1. Haz un **fork** del repositorio
+2. Crea una rama para tu feature: `git checkout -b feature/nueva-funcionalidad`
+3. Haz commit de tus cambios: `git commit -m 'feat: agrega nueva funcionalidad'`
+4. Haz push a tu rama: `git push origin feature/nueva-funcionalidad`
+5. Abre un **Pull Request**
+
+---
+
+## 📄 Licencia
+
+Este proyecto está bajo la licencia **MIT**. Consulta el archivo [LICENSE](LICENSE) para más información.
+
+---
+
+<p align="center">
+  Proyecto Académico — <strong>MedicClips SaaS</strong> © 2026<br>
+  Hecho con ❤️ por el equipo de desarrollo
+</p>
