@@ -333,6 +333,6 @@ Este proyecto está bajo la licencia **MIT**. Consulta el archivo [LICENSE](LICE
 ---
 
 <p align="center">
-  Proyecto Académico — <strong>MedicClips SaaS</strong> © 2026<br>
+  Otro Proyecto de Goldsam — <strong>MedicClips SaaS</strong> © 2026<br>
   Hecho con ❤️ por el equipo de desarrollo
 </p>
